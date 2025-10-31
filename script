@@ -1,1 +1,10 @@
+#!/bin/bash
+# Script para atualizar o sistema e instalar Apache HTTP Server
+
+sudo yum update -y
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+
+echo "Apache HTTP Server instalado e iniciado com sucesso!"
 
