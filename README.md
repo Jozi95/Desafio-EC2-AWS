@@ -1,33 +1,33 @@
-# Gerenciamento de Instâncias EC2 - AWS
+# Gerenciamento de Instâncias EC2 na AWS
 
-## Descrição do Projeto
-Este repositório contém anotações, práticas e scripts realizados para o gerenciamento de instâncias EC2 na AWS. O objetivo é consolidar o conhecimento adquirido durante as aulas, documentando processos, insights e boas práticas.
+## Sobre o Projeto
+Este repositório documenta minha experiência prática no gerenciamento de instâncias EC2 na AWS. Durante este projeto, realizei a criação, configuração e testes de instâncias, registrando aprendizados e boas práticas adquiridas ao longo do processo.
 
-## Objetivos do Projeto
-- Aplicar conceitos de criação, configuração e gerenciamento de instâncias EC2.
-- Documentar processos técnicos de forma clara e organizada.
-- Utilizar GitHub como ferramenta para armazenamento e compartilhamento do conhecimento.
+## Objetivos
+- Entender e aplicar conceitos de criação e gerenciamento de instâncias EC2.
+- Registrar passo a passo das atividades realizadas para estudo e consulta futura.
+- Organizar scripts e comandos úteis para facilitar reuso em outros projetos.
 
 ## Estrutura do Repositório
 - `README.md`: documentação detalhada do projeto.
-- `/scripts` (opcional): scripts utilizados para configuração da instância.
-- `notas.md`: observações e aprendizados durante a prática.
+- `/scripts` (opcional): scripts utilizados durante a configuração das instâncias.
+- `notas.md`: anotações pessoais sobre aprendizados, problemas enfrentados e soluções aplicadas.
 
 ## Passo a Passo Realizado
 
-### 1. Acesso à AWS
-- Entrar no [Console da AWS](https://aws.amazon.com/console/).
-- Navegar até o serviço **EC2**.
+### 1. Acesso ao Console AWS
+- Entrei no [Console da AWS](https://aws.amazon.com/console/).
+- Naveguei até o serviço **EC2** para iniciar a criação da instância.
 
 ### 2. Criação da Instância EC2
-- Selecionar uma **AMI** (Amazon Machine Image), por exemplo, Amazon Linux 2.
-- Escolher o **tipo de instância**, como t2.micro.
-- Configurar **chaves SSH** para acesso seguro.
-- Configurar **Security Groups** para liberar portas necessárias (22 para SSH, 80 para HTTP).
+- Escolhi a **AMI Amazon Linux 2** por ser compatível com os testes que eu queria realizar.
+- Selecionado o tipo de instância **t2.micro**, adequado para testes gratuitos.
+- Configurei a **chave SSH** para permitir acesso seguro à máquina.
+- Ajustei os **Security Groups** para liberar portas essenciais:
+  - 22 → SSH  
+  - 80 → HTTP
 
 ### 3. Conexão à Instância
-- Acessar a instância via SSH:
+- Conectei à instância usando o terminal:
 ```bash
-ssh -i "chave.pem" ec2-user@<IP-da-instancia>
-
-
+ssh -i "minha_chave.pem" ec2-user@<IP-da-instancia>
