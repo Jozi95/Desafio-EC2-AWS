@@ -10,12 +10,7 @@ Este repositório contém anotações, práticas e scripts realizados para o ger
 
 ## Estrutura do Repositório
 - `README.md`: documentação detalhada do projeto.
-- `/images`: capturas de tela relevantes das atividades.
-  - `criacao_ec2.png`
-  - `security_group.png`
-  - `teste_http.png`
-- `/scripts`: scripts utilizados para configuração da instância.
-  - `instalar_httpd.sh`
+- `/scripts`: scripts utilizados para configuração da instância (opcional).
 - `notas.md`: observações e aprendizados durante a prática.
 
 ## Passo a Passo Realizado
@@ -34,7 +29,4 @@ Este repositório contém anotações, práticas e scripts realizados para o ger
 - Acessar a instância via SSH:
 ```bash
 ssh -i "chave.pem" ec2-user@<IP-da-instancia>
-
-
-
 
